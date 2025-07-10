@@ -1,0 +1,6 @@
+pandas
+numpy
+scikit-learn
+xgboost
+pyarrow     # parquet read/write
+requests
