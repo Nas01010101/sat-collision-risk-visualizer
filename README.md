@@ -7,3 +7,9 @@ A full-stack tool for visualizing and predicting satellite collision risk.
 - ML model predicts collision risk using miss distance, time to closest approach, and relative speed.
 - Flask backend serves TLE data and risk predictions via REST API.
 - React frontend with CesiumJS displays satellites and debris on a 3D globe, color-coded by risk.
+
+## Machine Learning
+
+The `ml/` directory contains scripts for downloading CDMs, building features and
+training the risk model. See [ml/README.md](ml/README.md) for details on running
+`fetch_cdm.py`, `make_features.py` and `train.py`.
