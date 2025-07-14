@@ -4,7 +4,7 @@ and save them as Parquet for ML work.
 
 Usage:
     $ python fetch_cdm.py          # last 90 days → raw/cdm_<date>.parquet
-    $ DAYS=365 python fetch_cdm.py # customise look-back window
+    $ DAYS=365 python fetch_cdm.py # customize look-back window
 """
 import os
 import pandas as pd
