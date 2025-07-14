@@ -1,4 +1,5 @@
 // spacetrack/vite.config.js
+// Environment variables (like VITE_CESIUM_TOKEN) are loaded from `.env` by Vite
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
