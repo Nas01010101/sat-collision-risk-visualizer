@@ -11,7 +11,10 @@ import * as satellite from "satellite.js";
 import axios from "axios";
 import RiskInfoPanel from "./components/RiskInfoPanel";
 import * as Cesium from "cesium";
-Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5ZTQ5NDNiNS1iNGVlLTRiYzgtOWJlYi0wOTdlYTNmZTVmYWMiLCJpZCI6MzE4ODEzLCJpYXQiOjE3NTE3MzU1MDh9.5rwp27kvKaXjgZvzZW68A14aG4coUC6E1scwvNXmzeQ";
+// Read Cesium Ion access token from environment. When running via Vite,
+// environment variables exposed to the client must be prefixed with `VITE_`.
+Cesium.Ion.defaultAccessToken =
+  import.meta.env.VITE_CESIUM_ION_TOKEN || "";
 
 
 
